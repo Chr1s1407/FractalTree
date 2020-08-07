@@ -13,8 +13,8 @@ with the origin and destination in 0,0.
 FractalTree::FractalTree()
 {
     std::cout << "Fractal Tree: Default constructor" << std::endl;
-    origin = Vector(0,0);
-    destination = Vector(0,0);
+    origin = Vector<double>(0,0);
+    destination = Vector<double>(0,0);
     left = NULL;
     right = NULL;
 }
@@ -23,7 +23,7 @@ FractalTree::FractalTree()
 Creates a tree without any successor and
 with the origin and destination at the given parameters.
 */
-FractalTree::FractalTree(Vector origin_, Vector destination_)
+FractalTree::FractalTree(Vector<double> origin_, Vector<double> destination_)
 {
     std::cout << "Fractal Tree: constructor with origin and destination" << std::endl;
     this->origin = origin_;
@@ -60,8 +60,8 @@ Uses preoder traversal.
 */
 void FractalTree::print()
 {
-    std::cout << "origin: " << this->origin.x <<","<< this->origin.y
-              << ", destination: " << this->destination.x <<","<< this->destination.y  << std::endl;
+    std::cout << "origin: " << this->origin.first() <<","<< this->origin.second()
+              << ", destination: " << this->destination.first() <<","<< this->destination.second()  << std::endl;
 
     if(this->left != NULL)
     {
@@ -84,12 +84,12 @@ If the level is balanced a whole level will be inserted.
 */
 void FractalTree::insertLevel()
 {
-    Vector newVec = destination-origin;
+    Vector<double> newVec = destination-origin;
 
     newVec.scale(RATIO);
 
-    Vector newRight = newVec.rotate(DEGREE);
-    Vector newLeft = newVec.rotate(-DEGREE);
+    Vector<double> newRight = newVec.rotate(DEGREE);
+    Vector<double> newLeft = newVec.rotate(-DEGREE);
 
     if(this->left == NULL && this->right == NULL) //insert left and right node
     {

@@ -26,8 +26,8 @@ void printTree(class FractalTree* tree, const Cairo::RefPtr<Cairo::Context>& cr)
     {
         // first move to the origin of the node (which is the destination of the root),
         // then draw a line to the current destination
-        cr->move_to(tree->origin.x, tree->origin.y);
-        cr->line_to(tree->destination.x, tree->destination.y);
+        cr->move_to(tree->origin.first(), tree->origin.second());
+        cr->line_to(tree->destination.first(), tree->destination.second());
 
         // recursively call the method for left and right subtrees
         printTree(tree->left, cr);

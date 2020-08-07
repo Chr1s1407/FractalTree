@@ -6,7 +6,7 @@ given parameter as for example:
 */
 
 #ifndef RECURSION_DEPTH
-#define RECURSION_DEPTH 6
+#define RECURSION_DEPTH 3
 #endif // RECURSION_DEPTH
 
 #ifndef WIDTH
@@ -22,7 +22,7 @@ given parameter as for example:
 #endif // RATIO
 
 #ifndef DEGREE
-#define DEGREE 45 //40
+#define DEGREE 60 //40
 #endif // DEGREE
 
 #ifndef LENGTH_OF_FIRST
@@ -30,7 +30,7 @@ given parameter as for example:
 #endif // LENGTH_OF_FIRST
 
 #ifndef LINE_WIDTH
-#define LINE_WIDTH 8.0
+#define LINE_WIDTH 4.0
 #endif // LINE_WIDTH
 
 #ifndef COLOR_R

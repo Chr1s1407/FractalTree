@@ -13,8 +13,10 @@ Prints the tree to the window of the application.
 */
 int main(int argc, char** argv)
 {
-    Vector origin = Vector(WIDTH/2, HEIGHT);
-    Vector destination = Vector(WIDTH/2, HEIGHT-LENGTH_OF_FIRST);
+
+
+    Vector<double> origin = Vector<double>(WIDTH/2, HEIGHT);
+    Vector<double> destination = Vector<double>(WIDTH/2, HEIGHT-LENGTH_OF_FIRST);
 
     FractalTree* tree = new FractalTree(origin,destination);
 

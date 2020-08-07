@@ -12,14 +12,13 @@ class FractalTree
 {
 public:
     FractalTree();
-    FractalTree(Vector origin_, Vector destination_);
+    FractalTree(Vector<double> origin_, Vector<double> destination_);
     ~FractalTree();
 
     void insertLevel();
     void print();
 
-    // private:
-    Vector origin,destination;
+    Vector<double> origin,destination;
     class FractalTree* left;
     class FractalTree* right;
 };
