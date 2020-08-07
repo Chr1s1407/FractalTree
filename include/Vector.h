@@ -18,11 +18,31 @@ class Vector
 private:
     T x,y;
 public:
-    Vector():  x(0), y(0) {}
-    Vector(T a, T b): x(a), y(b) {}
+    Vector():  x(0), y(0)
+    {
+        std::cout << "Vector: Default Constructor" << std::endl;
+    }
+    Vector(T a, T b): x(a), y(b)
+    {
+        std::cout << "Vector: Constructor with 2 Parameters" << std::endl;
+    }
+
+    Vector(const Vector& other): x(other.x), y(other.y)
+    {
+        std::cout << "Vector: Copy Constructor" << std::endl;
+    }
+
     ~Vector()
     {
         std::cout << "Vector: Destructor" << std::endl;
+    }
+
+    Vector& operator=(Vector other)
+    {
+        this->x = other.x;
+        this->y = other.y;
+        std::cout << "Vector: assignment operator" << std::endl;
+        return *this;
     }
 
     /*
