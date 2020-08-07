@@ -13,8 +13,6 @@ Prints the tree to the window of the application.
 */
 int main(int argc, char** argv)
 {
-
-
     Vector<double> origin = Vector<double>(WIDTH/2, HEIGHT);
     Vector<double> destination = Vector<double>(WIDTH/2, HEIGHT-LENGTH_OF_FIRST);
 
