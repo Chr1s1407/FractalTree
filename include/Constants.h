@@ -6,7 +6,7 @@ given parameter as for example:
 */
 
 #ifndef RECURSION_DEPTH
-#define RECURSION_DEPTH 3
+#define RECURSION_DEPTH 9
 #endif // RECURSION_DEPTH
 
 #ifndef WIDTH
@@ -22,11 +22,11 @@ given parameter as for example:
 #endif // RATIO
 
 #ifndef DEGREE
-#define DEGREE 60 //40
+#define DEGREE 144 //40
 #endif // DEGREE
 
 #ifndef LENGTH_OF_FIRST
-#define LENGTH_OF_FIRST 350
+#define LENGTH_OF_FIRST 500
 #endif // LENGTH_OF_FIRST
 
 #ifndef LINE_WIDTH
@@ -34,27 +34,27 @@ given parameter as for example:
 #endif // LINE_WIDTH
 
 #ifndef COLOR_R
-#define COLOR_R 0.8549019607
+#define COLOR_R 0.67//0.8549019607
 #endif // COLOR_R
 
 #ifndef COLOR_G
-#define COLOR_G 0.647058823529411
+#define COLOR_G 0.0//0.647058823529411
 #endif // COLOR_G
 
 #ifndef COLOR_B
-#define COLOR_B 0.12549019607
+#define COLOR_B 0 //0.12549019607
 #endif // COLOR_B
 
 
 #ifndef BACKGROUND_R
-#define BACKGROUND_R 0.0
+#define BACKGROUND_R 0.2//0.0
 #endif // BACKGROUND_R
 
 #ifndef BACKGROUND_G
-#define BACKGROUND_G 0.0
+#define BACKGROUND_G 0.2//0.0
 #endif // BACKGROUND_G
 
 #ifndef BACKGROUND_B
-#define BACKGROUND_B 0.0
+#define BACKGROUND_B 0.2//0.0
 #endif // BACKGROUND_B
 
