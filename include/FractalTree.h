@@ -14,6 +14,8 @@ public:
     FractalTree();
     FractalTree(Vector<double> origin_, Vector<double> destination_);
     ~FractalTree();
+    FractalTree(const FractalTree& other);
+    FractalTree& operator=(const FractalTree other);
 
     void insertLevel();
     void print();

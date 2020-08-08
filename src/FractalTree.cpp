@@ -55,6 +55,29 @@ FractalTree::~FractalTree()
 }
 
 /*
+Copy constructor for fractal trees to fulfill the rule of three.
+*/
+FractalTree::FractalTree(const FractalTree& other): origin(other.origin), destination(other.destination)
+{
+    left = other.left;
+    right = other.right;
+    std::cout << "Fractal Tree: Copy Constructor" << std::endl;
+}
+
+/*
+Assignment operator for fractal trees to fulfill the rule of three.
+*/
+FractalTree& FractalTree::operator=(const FractalTree other)
+{
+    this->origin = other.origin;
+    this->destination = other.destination;
+    this->left = other.left;
+    this->right = other.right;
+    std::cout << "Fractal Tree: assignment operator" << std::endl;
+    return *this;
+}
+
+/*
 Prints the origin and destination of every node in the tree.
 Uses preoder traversal.
 */
